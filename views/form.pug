@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(action="/new", method="POST") 
+    label(for="inputName") Name 
+    input(type="text", name="name", id='inputName', placeholder='Name')
+
+    label(for="inputMessage") Message 
+    input(type="message", name="message", id='inputMessage', placeholder='Message')
+
+    button.btn.btn-primary(type='submit') Submit
+    

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  
+  each message in messages
+    ul 
+      li= message.user 
+      li= message.text 
+      li= message.added
+
+  a(class='button' href="/new") Make a new Post
+                
+    
+
